@@ -1,5 +1,30 @@
 # XState Visualizer
 
+## 0.4.0
+
+### Minor Changes
+
+- [#209](https://github.com/statelyai/xstate-viz/pull/209) [`45cdb47`](https://github.com/statelyai/xstate-viz/commit/45cdb47349f2507ad3a8199d9938199f1261f11c) Thanks [@farskid](https://github.com/farskid)! - Embedded Mode!
+
+  The visualizer/inspector can now be used in the embedded mode. In this mode, some parts of the application can be configured such as control buttons, panning, zooming, etc.
+  The most important parameter to configure embedded mode it the `mode` that can be one of `viz`, `full` or `panels`.
+
+* [#246](https://github.com/statelyai/xstate-viz/pull/246) [`22f1724`](https://github.com/statelyai/xstate-viz/commit/22f17242d85d86c6a3101900b0c90310d4c2b365) Thanks [@Andarist](https://github.com/Andarist)! - Added a hand icon to the canvas' toolbar:
+
+  <img alt="Canvas toolbar with the hand icon" src="https://user-images.githubusercontent.com/9800850/133060078-30127739-1f8b-47fd-9f2b-308fc3c641bb.png" width="255" />
+
+  This allows you to enable the "pan mode" to drag the canvas around without holding the spacebar button down at the same time.
+
+### Patch Changes
+
+- [#263](https://github.com/statelyai/xstate-viz/pull/263) [`4a0f041`](https://github.com/statelyai/xstate-viz/commit/4a0f041d52cb3c0c15d27244b83c41f5120bf28a) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with right-side panels getting cut off after stretching them and shrinking back with the resize handle.
+
+* [#240](https://github.com/statelyai/xstate-viz/pull/240) [`fbb2f00`](https://github.com/statelyai/xstate-viz/commit/fbb2f006aebe5a0413f62274666cb69dcd00d0bc) Thanks [@mattpocock](https://github.com/mattpocock)! - Added support for using setInterval, setTimeout, clearInterval and clearTimeout in the viz.
+
+- [#238](https://github.com/statelyai/xstate-viz/pull/238) [`e074059`](https://github.com/statelyai/xstate-viz/commit/e074059d45247de5fbea116449c093728b7d3e6f) Thanks [@mattpocock](https://github.com/mattpocock)! - When you press visualize, machines will now automatically 'fit to view'. This prevents various bugs around state machines appearing not to be visible, when they're actually just off screen.
+
+* [#247](https://github.com/statelyai/xstate-viz/pull/247) [`bdbc892`](https://github.com/statelyai/xstate-viz/commit/bdbc892a010fc7dc3ef3f304348ecac60f62966e) Thanks [@Andarist](https://github.com/Andarist)! - Fixed an issue with the code editor becoming visually broken after saving a machine.
+
 ## 0.3.0
 
 ### Minor Changes
